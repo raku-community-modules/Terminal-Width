@@ -1,7 +1,7 @@
 use lib 'lib';
 use Test;
-use-ok 'Terminal::Width';
+use Terminal::Width;
 
-is terminal-width, Int, 'terminal-width returned a number';
+ok terminal-width() ~~ Int, 'terminal-width returned a number';
 
 done-testing;

@@ -4,7 +4,7 @@
     "version"      : "1.001001",
     "description"  : "Get the current width of the terminal",
     "depends"      : [ ],
-    "test-depends" : [ "Test" ],
+    "test-depends" : [ "Test", "Test::META" ],
     "provides"     : {
         "Terminal::Width" : "lib/Terminal/Width.pm6"
     },
