@@ -40,7 +40,7 @@ to use if we fail to determine the actual width (defaults to `80`). If
 `:default` is set to `0` the subroutine will return a `Failure` if it
 can't determine the width.
 
-# SECURITY NOTE
+# ⚠ SECURITY NOTE
 
 On Windows, this module attempts to run program `mode` and on all other
 systems it attempts to run `tput`. A clever attacker can manipulate what
