@@ -1,3 +1,5 @@
+unit module Terminal::Width;
+
 sub terminal-width (Int :$default = 80) is export {
     my Int $width = $default;
 
