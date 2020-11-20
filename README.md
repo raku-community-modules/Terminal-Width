@@ -6,7 +6,7 @@ Terminal::Width - Get the current width of the terminal
 
 # SYNOPSIS
 
-```perl6
+```raku
     use Terminal::Width;
 
     # Default to 80 characters if we fail to get actual width:
@@ -30,7 +30,7 @@ work on OSX.
 
 ## `terminal-width`
 
-```perl6
+```raku
     terminal-width (Int :$default = 80 --> Int|Failure)
 ```
 
@@ -50,12 +50,12 @@ with the privileges of your script's user.
 # REPOSITORY
 
 Fork this module on GitHub:
-https://github.com/zoffixznet/perl6-Terminal-Width
+https://github.com/raku-community-modules/Terminal-Width
 
 # BUGS
 
 To report bugs or request features, please use
-https://github.com/zoffixznet/perl6-Terminal-Width/issues
+https://github.com/raku-community-modules/Terminal-Width/issues
 
 # AUTHOR
 
