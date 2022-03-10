@@ -15,7 +15,7 @@ jobs:
           path: ~/.raku/
           key: ${{ runner.os }}-${{ hashFiles('META6.json') }}
       - name: Install tput
-        run: sudo apk add ncurses
+        run: apk add ncurses
       - name: Install modules
         if: steps.meta6.outputs.cache-hit != 'true'
         run: zef install --deps-only .
