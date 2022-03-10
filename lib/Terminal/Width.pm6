@@ -16,6 +16,8 @@ sub terminal-width (Int :$default = 80) is export {
             $width = $<columns>.Int // $width;
         }
     } else {
+        fail 'Cannot use «tput» to determine terminal widh' unless
+        "/usr/bin/tput".IO.e;
         $width = try {
             run('tput', 'cols', :out).out.slurp-rest.trim.Int
         } // $width;
