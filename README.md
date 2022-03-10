@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/zoffixznet/perl6-Terminal-Width.svg)](https://travis-ci.org/zoffixznet/perl6-Terminal-Width)
-
 # NAME
 
 Terminal::Width - Get the current width of the terminal
