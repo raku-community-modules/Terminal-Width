@@ -1,3 +1,4 @@
-.precomp
+.precomp/
 test.p6
 *.iml
+.idea/
