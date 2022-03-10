@@ -1,15 +1,20 @@
 {
-    "perl"         : "6.c",
-    "name"         : "Terminal::Width",
-    "license"      : "Artistic-2.0",
-    "version"      : "1.001001",
-    "description"  : "Get the current width of the terminal",
-    "depends"      : [ ],
-    "test-depends" : [ "Test", "Test::META" ],
-    "provides"     : {
-        "Terminal::Width" : "lib/Terminal/Width.pm6"
-    },
-    "authors"      : [ "Zoffix Znet" ],
-    "source-url"   :
-        "git://github.com/raku-community-modules/Terminal-Width.git"
+  "name": "Terminal::Width",
+  "description": "Get the current width of the terminal",
+  "version": "1.001001",
+  "perl": "6.c",
+  "authors": [
+    "Zoffix Znet"
+  ],
+  "auth": "zef:raku-community-modules",
+  "depends": [],
+  "test-depends": [
+    "Test",
+    "Test::META"
+  ],
+  "provides": {
+    "Terminal::Width": "lib/Terminal/Width.pm6"
+  },
+  "license": "Artistic-2.0",
+  "source-url": "git://github.com/raku-community-modules/Terminal-Width.git"
 }
