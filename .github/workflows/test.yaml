@@ -17,7 +17,7 @@ jobs:
           path: ~/.raku/
           key: ${{ runner.os }}-${{ hashFiles('META6.json') }}
       - name: Install and test
-        run: docker run --rm -t --user root --entrypoint="/bin/sh" -v $(CWD):/test  jjmerelo/raku-test -c "apk add --update --no-cache ncurses su-exec && which tput && su-exec raku zef install ."
+        run: docker run --rm -it --user root --entrypoint="/bin/sh" -v $(pwd):/test  ghcr.io/jj/raku-zef-gha -c "apk add --update --no-cache ncurses && cd /test && export HOME=/home/raku && zef install ."
 
 
 

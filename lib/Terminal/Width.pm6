@@ -2,7 +2,6 @@ unit module Terminal::Width;
 
 sub terminal-width (Int :$default = 80) is export {
     my Int $width = $default;
-
     if $*SPEC ~~ IO::Spec::Win32 {
         # Look for CON: device; the columns are on the second info line.
         # Can't use actual words due to different languages available
