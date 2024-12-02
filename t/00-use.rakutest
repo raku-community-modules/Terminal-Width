@@ -1,8 +1,9 @@
-use lib 'lib';
 use Test;
 use Terminal::Width;
 
-say terminal-width();
+plan 1;
+
+#say terminal-width();
 ok terminal-width() ~~ Int, 'terminal-width returned a number';
 
-done-testing;
+# vim: expandtab shiftwidth=4
