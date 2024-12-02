@@ -1,6 +1,8 @@
 Revision history for Terminal::Width
 
 {{$NEXT}}
+
+1.1  2024-12-02T19:40:07+01:00
     - Use modern file extensions
     - Add CI badge for each OS
     - Some documentation updates to current situation
